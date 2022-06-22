@@ -9,7 +9,7 @@ using namespace  std;
 operationsData dataCollector(int ops) {
     float component1{};
     float component2{};
-    cout<<"Podaj pierwszy składnik działani: \n";
+    cout<<"Podaj pierwszy składnik działania: \n";
     cin>>component1;
     if(!cin)
     {
