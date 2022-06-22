@@ -1,6 +1,8 @@
-#include <iostream>
+#include "menu.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+        mainMenu();
+
     return 0;
 }
