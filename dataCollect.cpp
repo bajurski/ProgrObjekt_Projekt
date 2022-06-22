@@ -28,5 +28,6 @@ operationsData dataCollector(int ops) {
         choice(ops);
     }
 
+
     return operationsData();
 }
