@@ -7,5 +7,11 @@
 substraction::substraction(float s1, float s2) {
     sub1 = s1;
     sub2 = s2;
-    std::cout<<sub1<<" - "<<sub2<<" = "<<sub1-sub2<<std::endl;
+}
+
+float substraction::resullt() {
+    float diff{};
+    diff = sub1-sub2;
+    std::cout<<sub1 <<" - "<<sub2<<" = "<<diff<<std::endl;
+    return diff;
 }

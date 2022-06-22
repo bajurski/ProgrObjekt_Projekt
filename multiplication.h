@@ -10,6 +10,8 @@ class multiplication {
     float mult1, mult2;
 public:
     multiplication(float m1, float m2);
+
+    float resullt();
 };
 
 

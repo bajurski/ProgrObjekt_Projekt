@@ -9,6 +9,8 @@ class division {
     float div1, div2;
 public:
     division(float d1, float d2);
+
+    float resullt();
 };
 
 

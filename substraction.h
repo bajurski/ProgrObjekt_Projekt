@@ -10,6 +10,8 @@ class substraction {
     float sub1, sub2;
 public:
     substraction(float s1, float s2);
+
+    float resullt();
 };
 
 

@@ -5,7 +5,13 @@
 #include "addiction.h"
 
 addiction::addiction(float a1, float a2) {
-    comp1 = a1;
-    comp2 = a2;
-    std::cout<<comp1<<" + "<<comp2<<" = "<< comp1 + comp2<< std::endl;
+    add1 = a1;
+    add2 = a2;
+}
+
+float addiction::resullt() {
+    float sum{};
+    sum = add1 + add2;
+    std::cout << add1 << " + " << add2 << " = " << sum << std::endl;
+    return sum;
 }

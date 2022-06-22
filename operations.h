@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <iomanip>
+#include<math.h>
+#include<string>
 #include "addiction.h"
 #include "substraction.h"
 #include "multiplication.h"

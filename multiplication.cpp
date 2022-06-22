@@ -7,6 +7,11 @@
 multiplication::multiplication(float m1, float m2) {
     mult1 = m1;
     mult2 = m2;
-    std::cout<<mult1<<" * "<<mult2<<" = "<<mult1*mult2<<std::endl;
+}
 
+float multiplication::resullt() {
+    float multi{};
+    multi = mult1*mult2;
+    std::cout<<mult1 <<" * "<<mult2<<" = "<<multi<<std::endl;
+    return multi;
 }

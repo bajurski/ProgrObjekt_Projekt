@@ -7,5 +7,11 @@
 division::division(float d1, float d2) {
     div1 = d1;
     div2 = d2;
-    std::cout<<std::to_string(div1)<<" : "<<std::to_string(div2)<<" = "<<div1/div2<<std::endl;
+}
+
+float division::resullt() {
+    float diver{};
+    diver = div1+div2;
+    std::cout<<div1 <<" : "<<div2<<" = "<<diver<<std::endl;
+    return diver;
 }
