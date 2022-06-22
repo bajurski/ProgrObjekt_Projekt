@@ -18,7 +18,7 @@ operationsData dataCollector(int ops) {
         cout<<"Bad input !\n";
         choice(ops);
     }
-    cout<<"Podaj drugi składnik działani: \n";
+    cout<<"Podaj drugi składnik działania: \n";
     cin>>component2;
     if(!cin)
     {
