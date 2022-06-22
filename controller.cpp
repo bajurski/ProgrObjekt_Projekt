@@ -28,19 +28,38 @@ void mainMenu()
 }
 
 void choice(int menItem) {
-    int menIt{};
-    menIt = menItem;
+
     char yesNo{};
     switch (menItem) {
-        case 1 : cout<<"\n Twój wybór to :"<<"Dodawanie\n";
+        case 1 :
+            {
+            cout << "\n Twój wybór to :" << "Dodawanie\n";
+                dataCollector(menItem);
+            }
             break;
-        case 2 : cout<<"\n Twój wybór to :"<<"Odejmowanie\n";
+        case 2 :
+            {
+            cout<<"\n Twój wybór to :"<<"Odejmowanie\n";
+                dataCollector(menItem);
+            }
             break;
-        case 3 : cout<<"\n Twój wybór to :"<<"Mnożenie\n";
+        case 3 :
+            {
+            cout<<"\n Twój wybór to :"<<"Mnożenie\n";
+                dataCollector(menItem);
+            }
             break;
-        case 4 : cout<<"\n Twój wybór to :"<<"Dzielenie\n";
+        case 4 :
+            {
+            cout<<"\n Twój wybór to :"<<"Dzielenie\n";
+                dataCollector(menItem);
+            }
             break;
-        case 5 : cout<<"\n Twój wybór to :"<<"koniec programu\n";
+        case 5 :
+            {
+            cout<<"\n Twój wybór to :"<<"koniec programu\n";
+                dataCollector(menItem);
+            }
             break;
         default :
             {
