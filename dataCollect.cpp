@@ -9,6 +9,7 @@ using namespace  std;
 operationsData dataCollector(int ops) {
     float component1{};
     float component2{};
+    operationsData dataForCalc;
     cout<<"Podaj pierwszy składnik działania: \n";
     cin>>component1;
     if(!cin)
@@ -27,7 +28,9 @@ operationsData dataCollector(int ops) {
         cout<<"Bad input !\n";
         choice(ops);
     }
-
+    dataForCalc.component1 = component1;
+    dataForCalc.component2 = component2;
+    dataForCalc.operation = ops;
 
     return operationsData();
 }
