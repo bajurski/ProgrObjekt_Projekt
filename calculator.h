@@ -6,10 +6,10 @@
 #define PROGROBJEKT_PROJEKT_CALCULATOR_H
 
 #include "operations.h"
-#include "dataCollect.h"
 
-operationsData govenor(int switcher);
-float addiction(operationsData dataForCalc);
+
+void govenor(operationsData dataForCalc);
+float addiction( operationsData dataForCalc);
 float substraction(operationsData dataForCalc);
 float multiplication(operationsData dataForCalc);
 float division(operationsData dataForCalc);

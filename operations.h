@@ -13,5 +13,8 @@
 #include "substraction.h"
 #include "multiplication.h"
 #include "division.h"
+#include "controller.h"
+#include "dataCollect.h"
+#include "calculator.h"
 
 #endif //PROGROBJEKT_PROJEKT_OPERATIONS_H

@@ -6,13 +6,13 @@
 #define PROGROBJEKT_PROJEKT_DATACOLLECT_H
 
 #include "operations.h"
-#include "controller.h"
+
 
 struct operationsData {
     float component1;
     float component2;
     int operation;
 };
-operationsData dataCollector(int ops);
+void dataCollector(int ops);
 
 #endif //PROGROBJEKT_PROJEKT_DATACOLLECT_H
