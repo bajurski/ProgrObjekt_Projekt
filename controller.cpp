@@ -56,7 +56,6 @@ void choice(int menItem) {
         case 5 :
             {
             cout<<"\n Twój wybór to :"<<"koniec programu\n";
-                //dataCollector(menItem);
                 exit(0);
             }
         default :
