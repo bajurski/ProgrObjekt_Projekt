@@ -3,3 +3,7 @@
 //
 
 #include "calculator.h"
+
+float addiction(operationsData dataForCalc) {
+    return 0;
+}
