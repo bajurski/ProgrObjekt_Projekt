@@ -16,7 +16,7 @@ operationsData dataCollector(int ops) {
     {
         cin.clear(); // reset failbit
         cin.ignore(numeric_limits<streamsize>::max(), '\n');//skip bad input, next request user reinput
-        cout<<"Bad input !\n";
+        cout<<"Bad input !\n\n";
         choice(ops);
     }
     cout<<"Podaj drugi składnik działania: \n";
@@ -25,7 +25,7 @@ operationsData dataCollector(int ops) {
     {
         cin.clear(); // reset failbit
         cin.ignore(numeric_limits<streamsize>::max(), '\n');//skip bad input, next request user reinput
-        cout<<"Bad input !\n";
+        cout<<"Bad input !\n\n";
         choice(ops);
     }
     dataForCalc.component1 = component1;
