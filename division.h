@@ -6,7 +6,7 @@
 #define PROGROBJEKT_PROJEKT_DIVISION_H
 #include"operations.h"
 class division {
-    float div1, div2;
+    float res;
 public:
     division(float d1, float d2);
 

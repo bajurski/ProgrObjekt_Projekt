@@ -17,4 +17,5 @@
 #include "dataCollect.h"
 #include "calculator.h"
 
+
 #endif //PROGROBJEKT_PROJEKT_OPERATIONS_H

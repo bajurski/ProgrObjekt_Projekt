@@ -7,7 +7,7 @@
 #include "operations.h"
 
 class substraction {
-    float sub1, sub2;
+    float res;
 public:
     substraction(float s1, float s2);
 

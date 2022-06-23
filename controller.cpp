@@ -3,7 +3,7 @@
 //
 
 #include "controller.h"
-#include "operations.h"
+
 
 using namespace std;
 void mainMenu()
@@ -26,9 +26,7 @@ void mainMenu()
    }
     choice(menuItem);
 }
-
 void choice(int menItem) {
-
     char yesNo{};
     switch (menItem) {
         case 1 :
@@ -58,29 +56,18 @@ void choice(int menItem) {
         case 5 :
             {
             cout<<"\n Twój wybór to :"<<"koniec programu\n";
-                dataCollector(menItem);
+                //dataCollector(menItem);
+                exit(0);
             }
-            break;
         default :
             {
             cout<<"\n Nie ma takiego elementu.\n"
                   "Czy chcesz kontynuować ? [y/n]\n";
             cin>>yesNo;
             if(yesNo == 'y'||yesNo == 'Y') {
+                cin.clear();
                 mainMenu();
-            } else exit;
+            } else exit(0);
             }
     }
 }
-/* addiction *a = new addiction(20.31,70.001);
-   a->resullt();
-   division *d = new division(6,900000);
-   d->resullt();
-   multiplication *m = new multiplication(23, 567.01);
-   m->resullt();
-   substraction *s = new substraction(45,56);
-   s->resullt();
-   delete a;
-   delete d;
-   delete m;
-   delete s;*/

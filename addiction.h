@@ -8,11 +8,11 @@
 #include<iostream>
 
 class addiction {
-    float add1, add2;
+    float res;
 public:
     addiction(float a1, float a2);
 
-    float resullt();
+    float resullt() const;
 };
 
 

@@ -5,13 +5,8 @@
 #include "addiction.h"
 
 addiction::addiction(float a1, float a2) {
-    add1 = a1;
-    add2 = a2;
+    res = a1 + a2;
 }
-
-float addiction::resullt() {
-    float sum{};
-    sum = add1 + add2;
-    std::cout << add1 << " + " << add2 << " = " << sum << std::endl;
-    return sum;
+float addiction::resullt() const {
+    return res;
 }

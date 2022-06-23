@@ -7,30 +7,33 @@
 using namespace  std;
 
 void dataCollector(int ops) {
-    float component1{};
-    float component2{};
-    int datForCal;
+    float comp1{};
+    float comp2{};
     cout<<"Podaj pierwszy składnik działania: \n";
-    cin>>component1;
+    cin >> comp1;
     if(!cin)
     {
         cin.clear(); // reset failbit
         cin.ignore(numeric_limits<streamsize>::max(), '\n');//skip bad input, next request user reinput
-        cout<<"Bad input !\n\n";
+        cout<<"Bad input !\n";
         choice(ops);
     }
     cout<<"Podaj drugi składnik działania: \n";
-    cin>>component2;
+    if(ops == 4) cout<<"Wybrałeś dzielenie, awięc to nie może być zero !\n";
+    cin >> comp2;
+    if(ops==4 && comp2==0)
+    {
+        cout<<"Dzielnik nie może być zerem !\n";
+        mainMenu();
+    }
     if(!cin)
     {
         cin.clear(); // reset failbit
         cin.ignore(numeric_limits<streamsize>::max(), '\n');//skip bad input, next request user reinput
-        cout<<"Bad input !\n\n";
+        cout<<"Bad input !\n";
         choice(ops);
     }
-    datForCal;
-    datForCal.component2 = component2;
-    datForCal.operation = ops;
-
-    govenor(datForCal);
+   govenor(comp1,comp2,ops);
 }
+
+

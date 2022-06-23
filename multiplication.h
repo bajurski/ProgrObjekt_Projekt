@@ -7,7 +7,7 @@
 #include "operations.h"
 
 class multiplication {
-    float mult1, mult2;
+    float res;
 public:
     multiplication(float m1, float m2);
 

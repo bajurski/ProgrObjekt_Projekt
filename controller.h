@@ -6,7 +6,6 @@
 #define PROGROBJEKT_PROJEKT_CONTROLLER_H
 
 #include "operations.h"
-#include "dataCollect.h"
 
 void mainMenu();
 void choice(int menItem);
