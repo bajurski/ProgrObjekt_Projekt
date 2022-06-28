@@ -6,7 +6,7 @@
 
 
 using namespace std;
-void mainMenu()
+void mainMenu()     //<---- Main menu. Program entry point, called in main.cpp.
 {
     int menuItem{};
     string strMenuIt{};
@@ -32,8 +32,8 @@ void choice(int menItem) {
         case 1 :
             {
             cout << "\n You have chosen :" << "Addiction\n";
-                dataCollector(menItem);
-            }
+                dataCollector(menItem); // <--- when an option is chosen, menItem is passed to the
+            }                                // dataCollector(menItem) function declared in dataCollect.h
             break;
         case 2 :
             {
