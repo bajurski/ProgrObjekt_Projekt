@@ -19,7 +19,7 @@ void mainMenu()
           "[4] - Division\n"
           "[5] - Exit program\n\n";
     cout<<"Twój wybór : ";
-    cin>>menuItem;
+    cin>> menuItem;
    if(!cin) {
        cin.clear(); // reset failbit
        cin.ignore(numeric_limits<streamsize>::max(), '\n');//skip bad input, next request user reinput
