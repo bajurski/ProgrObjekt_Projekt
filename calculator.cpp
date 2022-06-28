@@ -57,16 +57,16 @@ void divi(float d1, float d2) {
 
 void printResullts(float comp1, float comp2, float res, char symbol) {
     char yesNo;
-    cout<<"WYNIK : \n";
+    cout<<"RESULT : \n";
     cout<<comp1<<" "<<symbol<<" "<<comp2<<" = "<<res;
-    cout<<"\nCzy chcesz dalej liczyć ? [y/n] \n";
+    cout<<"\nDo you want to continue ? [y/n] \n";
     cin>>yesNo;
     if(yesNo=='y' || yesNo=='Y')
     {
         mainMenu();
     } else {
         cin.clear();
-        cout<<"Koniec programu. \n\n";
+        cout<<"End of the program. \n\n";
         exit(0);
     }
 }

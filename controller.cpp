@@ -18,7 +18,7 @@ void mainMenu()
           "[3] - Multiplication\n"
           "[4] - Division\n"
           "[5] - Exit program\n\n";
-    cout<<"Twój wybór : ";
+    cout<<"Your choice : ";
     cin>> menuItem;
    if(!cin) {
        cin.clear(); // reset failbit
