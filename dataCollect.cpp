@@ -9,7 +9,7 @@ using namespace  std;
 void dataCollector(int ops) {
     float comp1{};
     float comp2{};
-    cout<<"Podaj pierwszy składnik działania: \n";
+    cout<<"Enter first component of the operation: \n";
     cin >> comp1;
     if(!cin)
     {
@@ -18,12 +18,16 @@ void dataCollector(int ops) {
         cout<<"Bad input !\n";
         choice(ops);
     }
-    cout<<"Podaj drugi składnik działania: \n";
-    if(ops == 4) cout<<"Wybrałeś dzielenie, awięc to nie może być zero !\n";
+    cout<<"Enter second component of the operation: \n";
+    if(ops == 4) cout<<"While it is a division, divisor CAN'T be ZERO !! \n";
     cin >> comp2;
     if(ops==4 && comp2==0)
     {
-        cout<<"Dzielnik nie może być zerem !\n";
+        cout<<"Divisor can't be equal to ZERO !\n";
+        cin.clear(); // reset failbit
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout<<"Press any key to return to main menu\n";
+        cin.get();
         mainMenu();
     }
     if(!cin)

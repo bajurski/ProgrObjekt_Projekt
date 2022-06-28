@@ -10,14 +10,14 @@ void mainMenu()
 {
     int menuItem{};
     string strMenuIt{};
-    cout<<"----- KALKULATOR ARYTMETYCZNY--------\n"
+    cout<<"----- ARITHMETIC CALCULATOR--------\n"
           "=====================================\n";
-    cout<<"Proszę wybrać działanie i podać jego składniki:\n\n"
-          "[1] - Dodawanie\n"
-          "[2] - Odejmowanie\n"
-          "[3] - Mnożenie\n"
-          "[4] - Dzielenie\n"
-          "[5] - Koniec programu\n\n";
+    cout<<"Choose operation, and insert it's components::\n\n"
+          "[1] - Addiction\n"
+          "[2] - Subtraction\n"
+          "[3] - Multiplication\n"
+          "[4] - Division\n"
+          "[5] - Exit program\n\n";
     cout<<"Twój wybór : ";
     cin>>menuItem;
    if(!cin) {
@@ -31,38 +31,38 @@ void choice(int menItem) {
     switch (menItem) {
         case 1 :
             {
-            cout << "\n Twój wybór to :" << "Dodawanie\n";
+            cout << "\n You have chosen :" << "Addiction\n";
                 dataCollector(menItem);
             }
             break;
         case 2 :
             {
-            cout<<"\n Twój wybór to :"<<"Odejmowanie\n";
+            cout<<"\n  You have chosen :"<<"Subtraction\n";
                 dataCollector(menItem);
             }
             break;
         case 3 :
             {
-            cout<<"\n Twój wybór to :"<<"Mnożenie\n";
+            cout<<"\n You have chosen :"<<"Multiplication\n";
                 dataCollector(menItem);
             }
             break;
         case 4 :
             {
-            cout<<"\n Twój wybór to :"<<"Dzielenie\n";
+            cout<<"\n You have chosen  :"<<"Division\n";
                 dataCollector(menItem);
             }
             break;
         case 5 :
             {
-            cout<<"\n Twój wybór to :"<<"koniec programu\n";
+            cout<<"\n You have chosen :"<<"Exit program\n";
                 //dataCollector(menItem);
                 exit(0);
             }
         default :
             {
-            cout<<"\n Nie ma takiego elementu.\n"
-                  "Czy chcesz kontynuować ? [y/n]\n";
+            cout<<"\n There is no such element..\n"
+                  "Do You want to continue ? [y/n]\n";
             cin>>yesNo;
             if(yesNo == 'y'||yesNo == 'Y') {
                 cin.clear();
